@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+*{
+    margin: auto;
+    padding: auto;
+
+}
+
+/*Header*/
+.conteiner{
+    width: 100%;
+    height: 70;
+    background-image: linear-gradient(red,white);
+    z-index: 1;
+}
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-tdl{
+    width: 160px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.logo-tdl{
+    width: 10%;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.logo-tdl:hover{
+    transform: scale(1.2);
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration:none ;
+    color: black;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.navbar ul li::before{
+    content: "";
+    height: 4px;
+    width: 0%;
+    background-color:red;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+    
+}
+
+.navbar ul li:hover::before {
+    width: 100%;
+}
+
+@media screen and (max-widht:400px){
+    .conteiner   {width: 100%;}
+    .tdl-logo{width: 100%;}
+    .navbar{width: 100%;}
+    .menu-link{width: 100%;}
+}
+
+/*carrito e inicio */
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:90%;
+    max-width: 1600px;
+    height: 100%;
+    margin: 0 auto;
+    
+}
+
+.menu-links {
+    height: 100%;
+    transition: transform .5s;
+    display: flex;
+    
+}
+.menu-item{
+    list-style: none;
+    position: relative;
+    height: 100%;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    z-index: 2;  
+}
+
+.menu-item:hover{ 
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.menu-nesting{
+    clip-path: var(--clip);
+}
+
+.menu-link {
+    color:rgb(0, 0, 0) ;
+    text-decoration: none;
+    display: flex;
+    height: 100%;
+    align-items: center;  
+    
+}
+
+.sesion-{
+    transform: var(--transform);
+    margin-left: 3px;
+}
+
+.menu-nesting{
+    list-style: none;
+    transition: clip-path .3s;
+    clip-path: var(--clip);
+    position: absolute;
+    right: -90px;
+    bottom: -65px;
+    width: max-content;
+    background-color: rgb(233, 98, 98);
+    border-radius: 5px;
+    
+}
+
+.menu-link:hover{
+    background-color:rgba(211, 192, 192, 0.473) ;
+    border-radius: 10px;
+}
+
+.menu-nesting-dos{
+    list-style: none;
+    transition: clip-path .3s;
+    clip-path: var(--clip);
+    position: absolute;
+    right: -30px;
+    bottom: -180px;
+    width:400px;
+    background-color: rgb(233, 98, 98);
+    border-radius: 5px;
+}
+
+/*Carousel*/
+.carousel .carousel-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    height: 500px;
+    z-index: 3;
+}
+
+.carousel .carousel-item img{
+   border-radius: 15px;
+}
+
+/*Nosotros*/
+.nosotros-class {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+
+.tdl-logo {
+     width: 214px;
+     height: 200px;
+     border-radius: 100px;
+     border: 5px solid black ;
+     object-fit: cover;
+     object-position: center;
+     position: relative;
+     left: 15%;
+}
+
+.nosotros-info {
+     font-family: 'Mochiy Pop P One', sans-serif;
+     padding: 50px;
+     position: relative;
+     right: 130px;
+}
+
+
+/*Servicios*/
+.bloque-serv {
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+    padding: 60px 30px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+.tit-servc {
+    font-size: 30px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 8px inset rgb(212, 77, 77);
+    width: 14%;
+    text-align: center;
+    position: relative;
+    left: 20px;
+    top: 50px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+.sub-title {
+    font-size: 20px;
+}
+.sub-title-dos {
+    font-size: 17px;
+}
+
+.img-ventas, .img-soporte {
+    max-width: 250px;
+    max-height: 250px ;
+    margin: 10px;
+    border-radius: 5px;
+    
+}
+
+.img-developer {
+    max-height: 300px ;
+    max-width: 280px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.img-trabaja {
+    width: 200px;
+    height: 275px;
+    margin: 6px;
+    border-radius: 5px;
+}
+
+.contenedor figure{
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 1px 25px rgba(0,0,0,0.50);
+    cursor: pointer;
+}
+
+.contenedor figure .img-developer {
+    width: 80%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.contenedor figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 103, 123, 0.7);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.contenedor figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor figure:hover > .capa .btn{
+    margin-top: 135px;
+    margin-bottom: 50px;
+}
+.btn {
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+/*Marcas*/
+
+.tit-marc {
+    font-size: 30px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 8px inset rgb(212, 72, 72);
+    max-width: 12%;
+    text-align: center;
+    position: relative;
+    left: 20px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.video {
+    text-align: center;
+    margin-right: 45%;
+    margin-top: 4.8%;
+}
+
+.img-gallery{
+    width: 50%;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
+    gap:15px;
+    justify-content: center;
+    position: relative;
+    left: 850px;
+    bottom: 380px;
+}
+
+.img-gallery img{
+    width: 30%;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.img-gallery img:hover{
+    transform: scale(1.2);
+}
+
+/*Contactanos*/
+.contacto-title {
+    font-size: 30px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 8px inset rgb(212, 77, 77);
+    width: 17%;
+    text-align: center;
+    position: relative;
+    bottom: 250px;
+    left: 20px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.info-contacto {
+    position: relative;
+    right: 20%;
+    bottom: 170px;
+    text-align: center;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+form{
+    width: 450px;
+    margin: auto;
+    background: rgb(255, 147, 147);
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    position: relative;
+    bottom: 420px;
+    left: 200px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton{
+    background: #aeb8d3;
+}
+
+#boton:hover{
+    cursor:pointer;
+}
+
+@media (max-widht:480px){
+    form{
+        width: 100%;
+    }
+}
+
+.map {
+    
+    bottom: 260px;
+    left: 260px;
+}
+/*Footer*/
+
+footer{
+    width: 100%;
+    position: auto;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-image: linear-gradient(white,red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.logo{
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.social-icons-contain, .footer-menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.social-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid black;
+    background-image: url(img/logo-facebook.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.social-icon:nth-of-type(2){
+    background-image: url(img/logo-instagram.png);
+}
+
+.social-icon:nth-of-type(3){
+    background-image: url(img/logo-whatsapp.png);
+}
+
+.social-icon:nth-of-type(4){
+    background-image: url(img/logo-linkedin.png);
+}
+
+.footer-menu-contain{
+    list-style-type: none;
+    color:black;
+    font-size:18px;
+}
+
+.menu-item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.menu-item-hover{
+    opacity: 1;
+}
+
+.copyright{
+    color: black;
+    opacity: 0.7;
+    text-align: center;
+}

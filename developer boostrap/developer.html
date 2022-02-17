@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="developer.css">
+    <title>Developer</title>
+ </head>
+ 
+  <body>
+    <!--Encabezado-->
+    <header class="container-fluid bg-danger d-flex justify-content-center">
+      <p class="text-light mb-0 p-1 fs-6">Contactanos (+51)993882123</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="menu">
+      <div class="container-fluid">
+        <img src="img/logo-tdl.png" alt="todo-laptop-logo" class="logo-tdl"><a class="navbar-brand" href="#">Todo Laptop Developer</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="developer.html">Inicio</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#equipo">Equipo</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#seccion-contacto">Contacto</a>
+            </li>
+          </ul>
+
+          <form class="d-flex">
+          <input class="form-control me-2" type="email" placeholder="Correo Electronico" aria-label="email">
+          <button class="btn btn-danger btn-danger-outline-success" type="button">Suscribete</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!--Slider-->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="img/slide-uno.jpg" class="d-block w-100 " alt="slide-uno-tdl">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/slide-dos.jpg" class="d-block w-100" alt="slide-dos-tdl">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/slide-tres.jpg" class="d-block w-100" alt="slide-tres-tdl">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--Intro-->
+    <section class="w-50 mx-auto text-center pt-5" id="intro">
+      <h1 class="p-3 fs-2 border-top border-3">Una agencia unica para todas tus necesidades de <span class="text-danger">Developers</span></h1>
+      <p class="p-3 fs-4 "><span class="text-danger">Todo Laptop Developers</span> es la agencia donde te ayudamos a establecer
+      tu presencia online. SEO, paginas WEB, tiendas virtuales.</p>
+    </section>
+
+    <!--Servicios-->
+    <section class="container-fluid">
+      <div class="row w-75 mx-auto my-5 servicio-fila">
+        <div class="col-lg-6 col-md-12 col-sm-12  d-flex  my-5 icono-wrap">
+          <img src="img/front-end-img-serv.png" alt="front-end" width="180"
+          height="160">
+          <h3 class="tit-serv fs-5 mt-4 px-5 pb-1">Desarrollador Front-End</h3>
+          <p class="px-4">Se enfoca en el usuario, en todo con lo que podemos interactuar y lo que vemos mientras navegamos.</p>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
+          <img src="img/back-end-img-serv.png" alt="back-end" width="170" height="160">
+          <h3 class="tit-serv fs-5 mt-4 px-4 pb-1">Desarrollador Back-End</h3>
+          <p class="px-4">Esta enfocado en hacer que todo lo que está detrás de un sitio web funcione correctamente.</p>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex  my-5 icono-wrap">
+          <img src="img/full-stack-img-serv.png" alt="full-stack" width="250"height="160">
+           <h3 class="tit-serv fs-5 mt-4 px-4 pb-1">Desarrollador Full-Stack</h3>
+           <p class="px-4">Es un profesional que cuenta con diversas habilidades informáticas multiskill que puede desenvolverse en el front-end, back-end de un desarrollo web.</p>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex  my-5 icono-wrap">
+          <img src="img/marketing-img-serv.png" alt="marketing" width="250" height="160">
+          <h3 class="tit-serv fs-5 mt-4 px-4 pb-1">Marketing Digital</h3>
+           <p class="px-4">Es el conjunto de estrategias volcadas hacia la promoción de una marca en el internet. Se diferencia del marketing tradicional por incluir el uso de canales y métodos que permiten el análisis de los resultados en tiempo real.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Nosotros-->
+    <section>
+     <div class="w-75 m-auto text-center" id="equipo">
+       <h1 class="mb-5 fs-2">Equipo pequeño con<span class="text-danger"> GRANDES RESULTADOS</span></h1>
+       <p class="fs-4">Siempre contamos con los profesionales adecuados para 
+        realizar un buen servicio esperando dar una excelente 
+        experiencia. Si te sientes listo para transformar tu mundo, 
+        te esperamos. QUE ESPERAS!</p>
+     </div>
+     <div class="mt-5 mb-5 text-center">
+       <img src="img/developers-img-nos.jpg" alt="developers-trabaj" class="rounded-3" class="img-fluid" width="1200">
+     </div>
+
+     <div  id="local" class="border-top border-2">
+       <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1640.1267313352607!2d-77.03517258462621!3d-12.118942486668159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c9c9183eec77%3A0xe030f7adad74194f!2sTODO%20LAPTOP!5e0!3m2!1ses-419!2spe!4v1643254242851!5m2!1ses-419!2spe" width="600" height="500" style="border:3;" allowfullscreen="" loading="lazy"></iframe>
+       </div>
+       <div>
+         <div class="wrapper">
+           <h2>Ubicado en Lima, Peru</h2>
+           <h2 class="text-danger mb-4" id="typewriter"></h2>
+           <p class="fs-5 text-body">
+             Elejimos Miraflores,Lima para nuestra oficina con el objetivo 
+             de ubicarnos en un lugar centrico y seguro para nuestros clientes.
+             Estamos ubicados en Miraflores, cerca de los mejores centros comerciales,
+             restaurantes, centros de entretenimiento y a 10 min de las playas cercanas.</p>
+           <section class="d-flex" id="numeros-local">
+             <div>
+               <p class="text-danger fs-5">240</p>
+               <p>Dias de sol</p>
+             </div>
+             <div>
+               <p class="text-danger fs-5">100%</p>
+               <p>Aprobado</p>
+             </div>
+             <div>
+               <p class="text-danger fs-5">26°C </p>
+               <p>Temperatura promedio</p>
+             </div>
+           </section>
+         </div>
+       </div>
+     </div>
+  </section>
+
+  <!--Formulario-->
+  <section id="seccion-contacto" class="border-bottom border-secondary border-2">
+    <div id="bg-contactos">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1b2a4e" fill-opacity="1" d="M0,192L40,202.7C80,213,160,235,240,208C320,181,400,107,480,117.3C560,128,640,224,720,245.3C800,267,880,213,960,186.7C1040,160,1120,160,1200,181.3C1280,203,1360,245,1400,266.7L1440,288L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+    </div>
+
+  <!--Datos Formulario-->
+  <div class="container" id="contenedor-formulario">
+    <div id="titulo-formulario" class="text-center mb-4">
+      <div><img src="img/contacto-img-form.jpg" alt="contacto" class="img-fluid rounded-3"></div>
+      <h2>Contactanos</h2>
+      <p class="fs-5">Estamos aqui para darle vida a tu nueva pagina web.</p>
+    </div>
+    
+    <form action="">
+      <div class="mb-3">
+        <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+      </div>
+      <div class="mb-3">
+        <input type="text" class="form-control" id="nombre" placeholder="Diego Evangelista" required>
+      </div>
+      <div class="mb-3">
+        <input type="tel" class="form-control" id="tel" placeholder="(+00)000000000" required>
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe tu Mensaje"></textarea>
+      </div>
+      <div class="mb-3">
+        <button type="button" class="btn btn-danger w-100 fs-5">Enviar Mensaje</button>
+      </div>
+    </form>
+  </div>
+  
+  </section>
+
+  <!--Footer-->
+
+  <footer class="w-100 d-flex align-items-center justify-content-center flex-wrap">
+    <p class="fs-5 px-3 pt-3">Todo Laptop Developer &copy; Todos Los Derechos Reservados 2022</p>
+    <div id="iconos">
+      <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+      <a href="https://twitter.com/?lang=es"><i class="bi bi-twitter"></i></a>
+      <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+      <script src="main-dos.js"></script>
+  </body>
+</html>
